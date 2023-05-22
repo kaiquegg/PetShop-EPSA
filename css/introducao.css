@@ -50,7 +50,8 @@
 .introducao .botao {
   display: inline-block;
   padding: 16px 32px;
-  align-self: flex-end;
+  place-self: end;
+  margin-right: 22px;
   color: #FFA800;
   background: #1F1500;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
