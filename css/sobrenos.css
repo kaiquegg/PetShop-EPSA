@@ -1,0 +1,129 @@
+.sobre-nos {
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 72px;
+}
+
+.sobre-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.sobre-titulo h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 32px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  padding-top: 40px;
+}
+
+.conteudo h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #1F1500;
+}
+
+.conteudo p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.conteudo a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 42px;
+  color: #000000;
+  margin-top: 40px;
+  place-self: end;
+  text-transform: uppercase;
+}
+
+
+
+.sobre-titulo h1 span {
+  color: #FFAF14;
+}
+
+.sobre-nos-container {
+  position: relative;
+  border-radius: 8px;
+  box-sizing: border-box;
+  max-width: 1400px;
+  padding: 20px 20px 100px 200px;
+  margin: 30px auto 0px auto;
+}
+
+.gato img {
+  top: -260px;
+  left: -200px;
+  position: absolute;
+}
+
+.sobre-nos-bg {
+  background: linear-gradient(to right, white 21%, #FFAF14 0);
+  margin-bottom: 200px;
+  position: relative;
+}
+
+.sobre-nos-bg::after {
+  content: "";
+  position: absolute;
+  bottom: 90px;
+  display: inline-block;
+  height: 16px;
+  width: 100%;
+  background-color: #A16B00;
+}
+
+@media (max-width: 1600px) {
+  .sobre-nos-bg {
+    background: #FFAF14;
+  }
+
+  .gato img {
+    top: -260px;
+    left: -80px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 740px) {
+  .gato img {
+    display: none;
+  }
+
+  .conteudo {
+    padding: 0;
+  }
+
+  .sobre-nos-container {
+    padding: 80px 20px 100px 20px;
+  }
+
+  .conteudo h2 {
+    line-height: 40px;
+  }
+
+  .conteudo p {
+    font-size: 20px;
+  }
+}
