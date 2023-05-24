@@ -5,20 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./css/styles.css" as="style">
+    <link rel="icon" href="./img/SVGs/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Petshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>PEPSA - Petshop</title>
+    <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
     <header class="header-bg">
-        <header class="header container"><a href="#">
+        <header class="header container">
+            <a href="./index.html">
                 <img src="./img/SVGs/SVG Logo.svg" alt="">
             </a>
-            <nav>
+            <nav class="js-menu">
                 <ul class="lista-nav container">
-                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="./sobre-nos.html">Sobre nós</a></li>
                     <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="./produtos-cad.html">Cadastro de Produtos</a></li>
                     <a href="#"><img src="./img/SVGs/lupa.svg" alt=""></a>
                 </ul>
             </nav>
@@ -27,33 +34,35 @@
     <main class="introducao-bg">
         <div class="introducao container">
             <div class="introducao-conteudo">
-                <p>COM A GENTE</p>
-                <h1>O seu pet seguro e cheio de amor<span>!</span></h1>
-                <a href="#" class="botao">Contate-nos!</a>
+                <p class="fadeInDown" data-anime="200">COM A GENTE</p>
+                <h1 class="fadeInDown" data-anime="400">O seu pet seguro e cheio de amor<span>!</span></h1>
+                <div class="botao-intro js-menu" data-anime="600">
+                    <a class="botao" href="#footer">Contate-nos!</a>
+                </div>
             </div>
-            <picture class="cachorro">
+            <picture class="cachorro fadeInRight" data-anime="800">
                 <img src="./img/cachorro 1.png" alt="cachorro de óculos">
             </picture>
         </div>
     </main>
     <section id="produtos" class="produtos-bg">
-        <h1>nossos produtos<span>.</span></h1>
+        <h1 class="fadeInUp" data-anime="1000">nossos produtos<span>.</span></h1>
         <ul>
-            <li class="item1">
+            <li class="item1 js-scroll">
                 <a href="#">
                     <img src="./img/Raçoes.png" alt="">
                     <h3>Rações</h3>
                     <p>Rações diversas para o paladar que seu bichinho merece!</p>
                 </a>
             </li>
-            <li class="item2">
+            <li class="item2 js-scroll">
                 <a href="#">
                     <img src="./img/Banho.png" alt="">
                     <h3>Banho e Tosa</h3>
                     <p>Um banhozinho que deixará seu filhinho com o pelinho brilhando de amores (e muito cheiroso!)</p>
                 </a>
             </li>
-            <li class="item3"><a href="#">
+            <li class="item3 js-scroll"><a href="#">
                     <img src="./img/Creche.png" alt="">
                     <h3>Creche</h3>
                     <p>O dia todo brincando e conhecendo amiguinhos novos, deixe que nós cuidaremos de seus pets por toda a tarde.</p>
@@ -61,7 +70,7 @@
             </li>
         </ul>
     </section>
-    <div class="sobre-nos">
+    <div class="sobre-nos js-scroll">
 
         <div class="sobre-titulo">
             <h1>sobre nós<span>.</span></h1>
@@ -71,18 +80,61 @@
     <section class="sobre-nos-bg">
         <div class="sobre-nos-container">
 
-            <div class="conteudo">
+            <div class="conteudo js-scroll">
                 <h2>O que nos torna especiais?</h2>
                 <p>O amor que temos em tratar todos os pets que atendemos com maior carinho e cuidado é o que nos faz levantar da cama, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="#">
+                <a href="./sobre-nos.html">
                     <h3>Saiba mais</h2>
                 </a>
             </div>
             <div class="gato">
-                <img src="./img/gato.png" alt="gato">
+                <img src="./img/gato.png" alt="gato" class="updown-animation">
             </div>
         </div>
     </section>
+    <footer id="footer" class="footer-bg">
+        <div class="footer container">
+            <img src="./img/SVGs/SVG Logo-b.svg">
+            <div class="footer-contato">
+                <h3>CONTATO</h3>
+                <ul>
+                    <li><a href="tel:+55319999999">+55 31 9999-9999</a></li>
+                    <li><a href="mailto:contato@PEPSA.com">contato@PEPSA.com</a></li>
+                    <li>Rua Amado Manuel Gomes, 45 - Bluepen</li>
+                    <li>Belo Horizonte - MG</li>
+                </ul>
+                <div class="footer-redes">
+                    <a href="./">
+                        <img src="./img/redes/instagram.svg">
+                    </a>
+                    <a href="./">
+                        <img src="./img/redes/facebook.svg">
+                    </a>
+                    <a href="./">
+                        <img src="./img/redes/youtube.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-informacoes">
+                <h3>INFORMAÇÕES</h3>
+                <nav>
+                    <ul>
+                        <li><a href="./bicicletas.html">Produtos</a></li>
+                        <li><a href="./seguros.html">Sobre nós</a></li>
+                        <li><a href="./contato.html">Cadastro de Produtos</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="footer-copy">
+                Página desenvolvida por Kaíque Egg, para curso Técnico em informática da EPSA © Alguns direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

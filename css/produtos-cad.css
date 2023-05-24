@@ -1,0 +1,122 @@
+.titulo-bg {
+  background-color: #FFAF14;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+.titulo {
+  color: rgb(193, 193, 193);
+  background: url("../img/SVGs/decdireita-t.svg") no-repeat top 0px right 0px;
+}
+
+.titulo p {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.titulo h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 32px;
+  color: black;
+  background: url("../img/SVGs/decdireita-t-p.svg") no-repeat top 70px right 100px;
+}
+
+.titulo h1 span {
+  color: #A16B00;
+}
+
+.form-bg {
+  background: #FFAF14;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+}
+
+.form label {
+  display: block;
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.form .col-2 {
+  grid-column: span 2;
+
+}
+
+.botao-cad {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/SVGs/decesquerda-b.svg") no-repeat bottom 140px left 0px,
+    url("../img/SVGs/decdireita-t.svg") no-repeat top 830px right 0px;
+
+}
+
+.botao-c {
+  display: inline-block;
+  padding: 16px 32px;
+  margin-right: 22px;
+  margin-bottom: 140px;
+  color: #FFA800;
+  background: #1F1500;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  text-transform: uppercase;
+  border-radius: 8px;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.botao-c:hover {
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  letter-spacing: 0.5px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: #f7f7f7;
+  border: 1px solid #ededed;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: #A16B00;
+  background: white;
+  box-shadow: 0 0 0 2px #fea;
+
+}
+
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .form .col-2 {
+    grid-column: 1;
+  }
+}

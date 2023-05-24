@@ -1,0 +1,20 @@
+.gato-p img {
+  top: -200px;
+  left: -200px;
+  position: absolute;
+}
+
+@media (max-width: 750px) {
+  .gato-p img {
+    top: 1000px;
+    left: 100px;
+    z-index: 999;
+    opacity: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .gato-p img {
+    display: none;
+  }
+}

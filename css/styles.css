@@ -9,3 +9,15 @@
 
 /* Sobre nós */
 @import "./sobrenos.css";
+
+/* Cadastro Produtos */
+@import "./produtos-cad.css";
+
+/* Sobre nós Página */
+@import "./sobre-nos-p.css";
+
+/* Footer */
+@import "./footer.css";
+
+/* Animação */
+@import "./animacao.css";

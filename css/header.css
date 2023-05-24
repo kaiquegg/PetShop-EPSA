@@ -61,6 +61,7 @@ header li {
 
 .lista-nav a {
   display: inline-block;
+  top: 2px;
   padding: 4px 0px;
   position: relative;
 }

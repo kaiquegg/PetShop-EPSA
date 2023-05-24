@@ -24,7 +24,15 @@
 .introducao-conteudo span {
   color: #A16B00;
   position: relative;
+  animation-name: span-opacity;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 3s;
+
 }
+
+
 
 .introducao img {
   object-fit: cover;
@@ -47,10 +55,13 @@
   font-size: 20px;
 }
 
+.botao-intro {
+  place-self: end;
+}
+
 .introducao .botao {
   display: inline-block;
   padding: 16px 32px;
-  place-self: end;
   margin-right: 22px;
   color: #FFA800;
   background: #1F1500;
@@ -60,13 +71,13 @@
   max-width: max-content;
   border: none;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .introducao .botao:hover {
   color: white;
-  padding: 20px 48px;
-
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 @media (max-width: 999px) {

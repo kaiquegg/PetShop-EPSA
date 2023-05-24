@@ -28,7 +28,7 @@
 
 .conteudo h2 {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 30px;
   line-height: 72px;
   text-transform: uppercase;
@@ -49,12 +49,28 @@
 .conteudo a {
   font-family: 'Roboto';
   font-style: normal;
+  display: inline-block;
   font-size: 18px;
   line-height: 42px;
   color: #000000;
   margin-top: 40px;
   place-self: end;
   text-transform: uppercase;
+  transition: .3s;
+}
+
+.conteudo a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 8px;
+  background: black;
+  margin-top: -8px;
+  transition: .3s;
+}
+
+.conteudo a:hover:after {
+  width: 100%;
 }
 
 
@@ -77,6 +93,16 @@
   left: -200px;
   position: absolute;
 }
+
+.updown-animation {
+  animation-name: infiniteupdown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all .3s;
+}
+
+
 
 .sobre-nos-bg {
   background: linear-gradient(to right, white 21%, #FFAF14 0);
